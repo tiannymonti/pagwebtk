@@ -1,0 +1,20 @@
+{
+  "name": "pagwebtk",
+  "version": "1.0.0",
+  "description": "pag web tk, refactoring, intent 1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "nodemon": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "nodemailer": "^5.1.1",
+    "noty": "^3.2.0-beta",
+    "tiny-slider": "^2.9.1"
+  }
+}

@@ -1,0 +1,343 @@
+/***
+*
+*	1. Estilo de productos internos
+*
+***/
+
+
+/***
+==========================
+	Estilo de productos internos
+==========================
+****/
+
+#contenedor-main {
+    height: 100vh;
+}
+
+
+/*------- Breadcumb --------*/
+
+#contenedor-main .contenedor-fila_breadcumb {
+    display: none;
+}
+
+
+/*------- Contenido central --------*/
+
+#bg-oracle {
+    background-image: url("../img/bg-oracle.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#bg-hp {
+    background-image: url("../img/bg-hp.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#bg-kaspersky {
+    background-image: url("../img/bg-kaspersky.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*------- .primera-columna ------*/
+
+.primera-columna .row {
+    height: 100%;
+}
+
+.contenedor-titulo {
+    overflow: hidden;
+}
+
+.contenedor-titulo-rojo:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 55, 64, 0.5);
+    position: absolute;
+    top: 0%;
+}
+
+.contenedor-titulo-amarillo:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 214, 60, 0.8);
+    position: absolute;
+    top: 0%;
+}
+
+.contenedor-titulo {
+    position: relative;
+}
+
+.contenedor-titulo .contenedor-btnVolver .row {
+    width: 100%;
+}
+
+.contenedor-titulo .contenedor-btnVolver .row::before {
+    content: "";
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: -20%;
+    -webkit-transform: skewY(15deg);
+    -moz-transform: skewY(15deg);
+    -o-transform: skewY(15deg);
+    transform: skewY(15deg);
+}
+
+.contenedor-titulo .contenedor-btnVolver a {
+    z-index: 5;
+}
+
+.contenedor-titulo .contenedor-btnVolver a img#img-movil {
+    display: block;
+}
+
+.contenedor-titulo .contenedor-btnVolver a img#img-escritorio {
+    display: none;
+}
+
+.contenedor-titulo .contenedor-texto-titulo h2 {
+    height: 70%;
+    margin: 3rem 1rem 1rem 1rem;
+    color: #FFFFFF;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+}
+
+.contenedor-lista .row {
+    height: 100%;
+}
+
+.contenedor-lista-gris {
+    background-color: rgba(187, 186, 186, 0.8);
+}
+
+.contenedor-lista-gris ul {
+    height: 100%;
+}
+
+.contenedor-lista-gris li {
+    padding-top: 10px;
+    list-style-type: none;
+    text-align-last: end;
+}
+
+.contenedor-lista-gris .lista li a {
+    text-decoration: none;
+}
+
+.contenedor-lista-gris .lista li a:hover h4 {
+    color: #4C4C4C;
+    padding-right: 2.5rem;
+    font-weight: 600;
+}
+
+.contenedor-lista-gris li h4 {
+    color: #705756;
+    margin: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #4A4A4A;
+    text-align: right;
+    transition: ease-in-out all 0.3s;
+}
+
+.contenedor-lista-gris li h4:before {
+    content: "";
+    background-color: #B31822;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 30%;
+    right: 0.5rem;
+}
+
+
+/*
+---------------------------------------------------
+#   Maneja la posición  y tamaño 
+#   para los cuadros amarillos según el producto
+---------------------------------------------------
+ */
+
+#titulo-enTiempoReal {
+    height: 73%;
+}
+
+
+/*------- .segunda-columna ------*/
+
+.segunda-columna {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contenedor-elementos-info {
+    overflow: hidden;
+}
+
+.elemento-info {
+    min-height: 100%;
+}
+
+.elemento-info h3 {
+    color: #575756;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+}
+
+.elemento-info h6.titulo-amarillo {
+    color: #D4A00B;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.elemento-info .contenedor-texto .subtitulo-interno {
+    color: #575756;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.elemento-info .contenedor-texto-adaptable {
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.elemento-info .contenedor-texto p {
+    margin-bottom: 2rem;
+    font-family: "Helvetica Neue LT Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 500;
+    overflow: auto;
+}
+
+.contenedor-elementos-info .elemento-info ul.lista-descripcion-producto {
+    margin-bottom: 2rem;
+    padding: 0px 0px 0px 30px;
+}
+
+.contenedor-elementos-info .elemento-info ul.lista-descripcion-producto li {
+    list-style: none;
+}
+
+.contenedor-elementos-info .elemento-info ul.lista-descripcion-producto li h5 {
+    margin-bottom: 0.5rem;
+    position: relative;
+    font-size: 1em;
+    font-family: "Helvetica Neue LT Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.contenedor-elementos-info .elemento-info ul.lista-descripcion-producto li h5::before {
+    content: "";
+    background-color: #B31822;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: -25px;
+}
+
+.elemento-info .contenedor-icono {
+    position: relative;
+}
+
+.elemento-info .contenedor-icono .icon-container {
+    margin-bottom: 3rem;
+}
+
+.elemento-info .contenedor-icono .icon-container:before {
+    content: "";
+    width: 95%;
+    height: 5px;
+    background-color: #4A4A4A;
+    position: absolute;
+    bottom: -15px;
+}
+
+.elemento-info .contenedor-icono .icon-container:after {
+    content: "";
+    width: 60%;
+    height: 5px;
+    background-color: #4A4A4A;
+    position: absolute;
+    bottom: -25px;
+}
+
+
+/*------- .tercera-columna ------*/
+
+.fondo-amarillo {
+    background-color: rgba(255, 214, 60, 0.8);
+}
+
+.fondo-rojo {
+    background-color: rgba(200, 55, 64, 0.5);
+}
+
+.tercera-columna {
+    display: none;
+    position: relative;
+}
+
+.tercera-columna .row {
+    height: 100%;
+}
+
+.tercera-columna .cuadro-color-uno {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0%;
+}
+
+.tercera-columna .cuadro-color-dos {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+}
+
+
+/*
+---------------------------------------------------
+#   Maneja la posición  y tamaño 
+#   para los cuadros amarillos según el producto
+---------------------------------------------------
+ */
+
+#cuadro-amarillo-mysql {
+    height: 30%;
+    top: 35%;
+}
+
+#cuadro-amarillo-dataIntegration,
+#cuadro-amarillo-java,
+#cuadro-amarillo-opcionesSeguridad,
+#cuadro-amarillo-calidadDatos,
+#cuadro-rojo-servidoresHP {
+    height: 80%;
+}
+
+#cuadro-amarillo-datosMayorTrans {
+    height: 20%;
+}

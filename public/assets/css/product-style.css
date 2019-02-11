@@ -1,0 +1,743 @@
+/***
+=====================================
+    PRODUCTOS EN GENERAL
+=====================================
+***/
+
+main #cabecera-oracle {
+    background-image: url("../img/oracle_bg.jpg");
+}
+
+main #cabecera-kaspersky {
+    background-image: url("../img/redhat-hd.png");
+}
+
+main #cabecera-hp {
+    background-image: url("../img/hp-hd.png");
+}
+
+main #cabecera-redhat {
+    background-image: url("../img/redhat-hd.png");
+}
+
+main .cabecera-producto {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+main #cabecera-redhat {
+    background-position: 20% center;
+}
+
+section .contenedor-breadcumb-producto {
+    height: 10vh;
+}
+
+section .contenedor-breadcumb-producto a,
+section .contenedor-breadcumb-producto p {
+    display: inline-block;
+}
+
+section.contenedor-breadcumb-producto a {
+    color: #9e9e9e;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+}
+
+section.contenedor-breadcumb-producto a:hover {
+    font-weight: 600;
+    border-bottom: 1px solid #575756;
+}
+
+section.contenedor-breadcumb-producto p {
+    color: #F7C639;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    cursor: default;
+    display: inline-block;
+}
+
+section.contenedor-info {
+    position: absolute;
+    top: 68vh;
+    left: 0px;
+}
+
+section.contenedor-info .intro-info {
+    background-color: #ffffff;
+}
+
+.cinta{
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
+hr.diag{
+    background-color:#ffffff;
+    border-top: 0px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-right-color: #ffffff;
+    -webkit-transform: rotate(-36deg);
+    position: absolute;
+    border-bottom-color: #f5f5f5;
+}
+
+hr.diag.diagrueso{
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    width: 418px;
+    right: 741px;
+    top: 140px;
+}
+
+hr.diag.diagdelgado{
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    width: 458px;
+    right: 690px;
+    top: 136px;
+}
+
+hr.diag.diagsegundo{
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    width: 418px;
+    right: 732px;
+    top: 144px; 
+}
+
+
+hr.borde {
+    background-color:#ffffff;
+    margin-left: 0px;
+    margin-right: -2.76vh;
+    border-top: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #f5f5f5;
+    border-left-color: #ffffff;
+    border-left-style: solid;
+    padding-top: 0px;
+}
+
+hr.borde.bordegrueso{
+    margin-top: -4.97vh;
+    margin-bottom: 0px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    margin-left: -18px;
+}
+
+hr.borde.bordedelgado{
+    border-width: 1px;
+    margin-top: 0.69vh;
+    margin-left: -27px;
+}
+
+hr.borde.bordesegundo{
+    border-width: 4px;
+    margin-top: -1.52vh;
+    margin-bottom: 4.76vh;
+    margin-left: -36px;
+}
+
+section.contenedor-info .parrafo-intro-info,
+section.contenedor-info .parrafo-intro-info-amarillo {
+    position: relative;
+    font-family: 'Helvetica Lite';
+    line-height: 1.4em;
+    font-size: 15px;
+    right: 13.83vh;
+}
+
+section.contenedor-info .parrafo-intro-info::before,
+section.contenedor-info .parrafo-intro-info-amarillo::before {
+    content: "";
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+}
+
+section.contenedor-info .parrafo-intro-info::after,
+section.contenedor-info .parrafo-intro-info-amarillo::after {
+    content: "";
+    width: 30%;
+    height: 5px;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+}
+
+section.contenedor-info .parrafo-intro-info::before,
+section.contenedor-info .parrafo-intro-info::after {
+    background-color: #ffffff;
+}
+
+section.contenedor-info .parrafo-intro-info-amarillo::before,
+section.contenedor-info .parrafo-intro-info-amarillo::after {
+    background-color: #F7C639;
+}
+
+section.contenedor-info .triangulo-derecha,
+section.contenedor-info .triangulo-izquierda {
+    display: none;
+}
+
+section.contenedor-info .info-container {
+    background-color: #ffffff;
+}
+
+.btn-volver-product-index img {
+    height: 100%;
+}
+
+br.space{
+    display: block;
+    content: " ";
+    margin-top: 15px;
+    line-height: 15px;
+}
+
+/***
+=====================================
+    SOLUCIONES TI
+=====================================
+***/
+
+#caja-info-sti {
+    background-image: url("../img/fondos-productos-1920px.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caja-info-sti a.tarjeta-sti {
+    height: 30vh;
+    color: #4D4D4D;
+    text-decoration: none;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+    font-variant: small-caps; 
+}
+
+#caja-info-sti a#tarjeta-arriba {
+    background-color: rgba(255,255,255, 0.75);
+}
+
+#caja-info-sti a#tarjeta-mitad {
+    background-color: rgba(255,255,255, 0.65);
+}
+
+#caja-info-sti a#tarjeta-abajo {
+    background-color: rgba(255,255,255, 0.85);
+}
+
+#caja-info-sti a#tarjeta-arriba:hover,
+#caja-info-sti a#tarjeta-mitad:hover,
+#caja-info-sti a#tarjeta-abajo:hover {
+    background-color: rgba(56, 50, 50, 0.8);
+    color: #ffffff;
+}
+
+.tarjeta-sti h3 {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.tarjeta-sti:hover h3 {
+    font-size: 1.9rem;
+}
+
+.tarjeta-sti h3::before {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.tarjeta-sti h3::after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.tarjeta-sti:hover h3::before {
+    width: 70px;
+}
+
+.tarjeta-sti:hover h3::after {
+    width: 140px;
+}
+
+
+/***
+=====================================
+    ORACLE
+=====================================
+***/
+
+#caja-info-oracle {
+    background-image: url("../img/bg-oracle.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caja-info-oracle .contenedor-logo-oracle {
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor-logo-oracle #logo-icon-oracle {
+    height: 5rem;
+}
+
+#caja-info-oracle .btn-volver-product-index {
+    height: 60px;
+}
+
+#caja-info-oracle .tarjeta-oracle {
+    height: 20vh;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-oracle .tarjeta-oracle h3 {
+    position: relative;
+}
+
+#caja-info-oracle .tarjeta-oracle h3::before {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -25px;
+    right: 25px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-oracle .tarjeta-oracle h3::after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -35px;
+    right: 25px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-oracle .tarjeta-oracle:hover h3::before {
+    width: 70px;
+}
+
+#caja-info-oracle .tarjeta-oracle:hover h3::after {
+    width: 140px;
+}
+
+#caja-info-oracle #tarjeta-mysql {
+    background-color: rgba(179, 24, 34, 0.5);
+}
+
+#caja-info-oracle #tarjeta-database {
+    background-color: rgba(179, 24, 34, 0.8);
+}
+
+#caja-info-oracle #tarjeta-dataintegration {
+    background-color: rgba(179, 24, 34, 0.4);
+}
+
+#caja-info-oracle #tarjeta-tiemporeal {
+    background-color: rgba(179, 24, 34, 0.5);
+}
+
+#caja-info-oracle #tarjeta-java {
+    background-color: rgba(179, 24, 34, 0.4);
+}
+
+#caja-info-oracle #tarjeta-datosmayor {
+    background-color: rgba(179, 24, 34, 0.8);
+}
+
+#caja-info-oracle #tarjeta-opcionesseguridad {
+    background-color: rgba(179, 24, 34, 0.4);
+}
+
+#caja-info-oracle #tarjeta-calidaddatos {
+    background-color: rgba(179, 24, 34, 0.8);
+}
+
+#caja-info-oracle #tarjeta-sistemasoperativos {
+    background-color: rgba(179, 24, 34, 0.4);
+}
+
+#caja-info-oracle #tarjeta-mysql:hover,
+#caja-info-oracle #tarjeta-database:hover,
+#caja-info-oracle #tarjeta-dataintegration:hover,
+#caja-info-oracle #tarjeta-tiemporeal:hover,
+#caja-info-oracle #tarjeta-java:hover,
+#caja-info-oracle #tarjeta-datosmayor:hover,
+#caja-info-oracle #tarjeta-opcionesseguridad:hover,
+#caja-info-oracle #tarjeta-calidaddatos:hover,
+#caja-info-oracle #tarjeta-sistemasoperativos:hover {
+    background-color: rgba(56, 50, 50, 0.8);
+}
+
+.con-lista-tarjeta ul.lista-tarjeta-oracle {
+    list-style: none;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.con-lista-tarjeta ul.lista-tarjeta-oracle li {
+    list-style: none;
+    text-align: right;
+}
+
+.con-lista-tarjeta ul.lista-tarjeta-oracle li a.link-lista {
+    color: #ffffff;
+    margin-right: 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.039em;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+    -webkit-transition: ease-in-out all 0.3s;
+    transition: ease-in-out all 0.3s;
+}
+
+.con-lista-tarjeta ul.lista-tarjeta-oracle li a.link-lista:hover {
+    margin-right: 30px;
+}
+
+.con-lista-tarjeta ul.lista-tarjeta-oracle li a.link-lista::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 40%;
+    right: -20px;
+}
+
+/***
+=====================================
+    KASPERSKY
+=====================================
+***/
+
+#caja-info-kas {
+    background-image: url("../img/bg-kaspersky.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caja-info-kas .contenedor-logo-kas {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#caja-info-kas .contenedor-logo-kas img {
+    width: 15rem;
+}
+
+#caja-info-kas a.tarjeta-kas {
+    height: 30vh;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-kas a#tarjeta-domestico {
+    background-color: rgba(179, 24, 34, 0.8);
+}
+
+#caja-info-kas a#tarjeta-empresarial {
+    background-color: rgba(179, 24, 34, 0.5);
+}
+
+#caja-info-kas a#tarjeta-plataformas {
+    background-color: rgba(179, 24, 34, 0.4);
+}
+
+#caja-info-kas a#tarjeta-domestico:hover,
+#caja-info-kas a#tarjeta-empresarial:hover,
+#caja-info-kas a#tarjeta-plataformas:hover {
+    background-color: rgba(56, 50, 50, 0.8);
+}
+
+.tarjeta-kas h3 {
+    position: relative;
+}
+
+.tarjeta-kas h3::before {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.tarjeta-kas h3::after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.tarjeta-kas:hover h3::before {
+    width: 70px;
+}
+
+.tarjeta-kas:hover h3::after {
+    width: 140px;
+}
+
+/***
+=====================================
+    HEWLETT PACKARD
+=====================================
+***/
+
+#caja-info-hp {
+    background-image: url("../img/bg-hp.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caja-info-hp .contenedor-logo-hp {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#caja-info-hp .contenedor-logo-hp img {
+    width: unset;
+    height: 8rem;
+}
+
+#caja-info-hp a.tarjeta-hp {
+    color: #ffffff;
+    height: 30vh;
+    text-decoration: none;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-hp a#tarjeta-servitorre {
+    background-color: rgba(247, 198, 57, 0.56);
+}
+
+#caja-info-hp a#tarjeta-servirack {
+    background-color: rgba(247, 198, 57, 0.85);
+}
+
+#caja-info-hp a#tarjeta-servitorre:hover,
+#caja-info-hp a#tarjeta-servirack:hover {
+    background-color: rgba(56, 50, 50, 0.8);
+}
+
+.tarjeta-hp h3 {
+    position: relative;
+}
+
+.tarjeta-hp h3::before {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.tarjeta-hp h3::after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.tarjeta-hp:hover h3::before {
+    width: 70px;
+}
+
+.tarjeta-hp:hover h3::after {
+    width: 140px;
+}
+
+/***
+=====================================
+    RED HAT
+=====================================
+***/
+
+#caja-info-redhat {
+    background-image: url("../img/bg-redhat.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caja-info-redhat #contenedor-logo-redhat {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#contenedor-logo-redhat #logo-icon-redhat {
+    height: 10rem;
+}
+
+#caja-info-redhat .targeta-redhat {
+    color: #ffffff;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-redhat .targeta-redhat .text-targeta-redhat {
+    opacity: 0;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#caja-info-redhat #targeta-seguridad {
+    background-color: rgba(247, 198, 57, 0.56);
+}
+
+#caja-info-redhat #targeta-jboss {
+    background-color: rgba(247, 198, 57, 0.85);
+}
+
+#caja-info-redhat #targeta-seguridad:hover,
+#caja-info-redhat #targeta-jboss:hover {
+    background-color: rgba(56, 50, 50, 0.8);
+}
+
+#caja-info-redhat #targeta-seguridad:hover .text-targeta-redhat,
+#caja-info-redhat #targeta-jboss:hover .text-targeta-redhat {
+    opacity: 1;
+}
+
+.targeta-redhat {
+    min-height: 222px;
+}
+
+.targeta-redhat h3 {
+    position: relative;
+}
+
+.targeta-redhat h3::before {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 195px;
+    right: 25px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.targeta-redhat h3::after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 205px;
+    right: 25px;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.targeta-redhat:hover h3::before {
+    width: 70px;
+}
+
+.targeta-redhat:hover h3::after {
+    width: 140px;
+}
+
+/*********************************************************
+    ===================================================
+        MEDIA QUERYS
+    ===================================================
+*********************************************************/
+
+/***
+========================================================
+    Large devices (desktops, 992px and up)
+========================================================
+***/
+
+@media (min-width: 992px) {
+    main #cabecera-redhat {
+        background-position: center center;
+    }
+    #caja-info-oracle .tarjeta-oracle {
+        height: 40vh;
+    }
+    .targeta-redhat h3::before {
+        content: "";
+        width: 0px;
+        height: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 140px;
+        right: 25px;
+        -webkit-transition: ease-in-out all 0.5s;
+        transition: ease-in-out all 0.5s;
+    }
+    .targeta-redhat h3::after {
+        content: "";
+        width: 0px;
+        height: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 150px;
+        right: 25px;
+        -webkit-transition: ease-in-out all 0.5s;
+        transition: ease-in-out all 0.5s;
+    }
+}

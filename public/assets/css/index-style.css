@@ -1,0 +1,583 @@
+section {
+    height: 100vh;
+    min-height: 100vh !important;
+}
+
+.cuadro-blanco {
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.27);
+}
+
+.cuadro-blanco-2 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cuadro-amarillo {
+    background-color: rgba(255, 208, 38, 0.8);
+}
+
+.cuadro-gris-1 {
+    background-color: rgba(222, 222, 222, 0.6);
+}
+
+.cuadro-gris-2 {
+    background-color: rgba(201, 201, 201, 0.6);
+}
+
+.cuadro-gris-texto {
+    background-color: #575756;
+}
+
+/***
+=====================================
+    LOADING SPLASH
+=====================================
+***/
+
+.splash-loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url("../img/splash-mobile.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 0px;
+    left: 0px;
+    z-index: 110;
+}
+
+/***
+=====================================
+    MODAL RESPUESTA
+=====================================
+***/
+
+.modal-respuesta {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(87, 87, 86, 0.911);
+    position: fixed;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1010;
+}
+
+.modal-respuesta .container-respuesta {
+    width: 90%;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.modal-respuesta .container-respuesta .contenedor-btn-cierra-modal {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modal-respuesta .container-respuesta .btn-cierra-modal {
+    width: 40px;
+    height: 40px;
+    color: #b31822;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.modal-respuesta .container-respuesta h4,
+.modal-respuesta .container-respuesta p {
+    width: 100%;
+    text-align: center;
+}
+
+/***
+==================================
+    SECTION CONOCIMIENTO
+==================================
+***/
+
+#section-conocimiento {
+    background-image: url("../img/bg-homeportafolio.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+#section-conocimiento #fila-svg-conocimiento {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+#section-conocimiento #fila-svg-conocimiento img {
+    width: 100%;
+}
+
+#section-conocimiento #fila-svg-btn-scroll {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    z-index: 3;
+    -webkit-animation: sube-baja 1s infinite alternate;
+    animation: sube-baja 1s infinite alternate;
+}
+
+#section-conocimiento #fila-svg-btn-scroll img {
+    width: auto;
+    height: 7rem;
+}
+
+@-webkit-keyframes sube-baja {
+    0% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 90px;
+    }
+}
+
+@keyframes sube-baja {
+    0% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 90px;
+    }
+}
+
+/***
+==================================
+    SECTION QUIENES SOMOS
+==================================
+***/
+
+#section-quienes-somos {
+    background-image: url("../img/bg-somos.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+/* ------ MOBILE DESIGN ------ */
+
+#quienes-somos-mobile {
+    position: relative;
+}
+
+#quienes-somos-mobile #contenedor-cuadros,
+#quienes-somos-mobile #contenedor-texto {
+    height: 50vh;
+}
+
+#quienes-somos-mobile #contenedor-cuadros {
+    position: relative;
+}
+
+#quienes-somos-mobile #fila-svg-quienes-somos-mobile {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#quienes-somos-mobile #fila-svg-quienes-somos-mobile img {
+    width: 90%;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+#quienes-somos-mobile #contenedor-texto {
+    background-color: #575756;
+}
+
+#quienes-somos-mobile #contenedor-texto #quienes-somos-carousel-nav-container .btn-nav-quienes-somos {
+    background-color: #FFD126;
+}
+
+#quienes-somos-carousel .quienes-somos-text {
+    max-height: 200px;
+    overflow: auto;
+}
+
+#quienes-somos-carousel .quienes-somos-text h4,
+#quienes-somos-carousel .quienes-somos-text p {
+    color: #ffffff;
+}
+
+#quienes-somos-carousel .quienes-somos-text p {
+    font-weight: 400;
+    font-family: 'Helvetica Lite', Arial, sans-serif;
+}
+
+/* ------ DESKTOP DESIGN ------ */
+
+#quienes-somos-desktop {
+    height: 100vh;
+    position: relative;
+}
+
+#quienes-somos-desktop .h-50 {
+    height: 50%;
+}
+
+#quienes-somos-desktop .cuadro-blanco-2 {
+    height: 70%;
+    position: relative;
+    top: 30%;
+    right: 0px;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul {
+    list-style-type: none;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul li {
+    border-bottom: 1px solid #575757;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul li a {
+    color: #575756;
+    text-decoration: none;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul li a h4 {
+    margin-right: 20px;
+    position: relative;
+    -webkit-transition: ease-in-out all 0.3s;
+    transition: ease-in-out all 0.3s;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul li a h4::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #FFD126;
+    position: absolute;
+    bottom: 8px;
+    right: -20px;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul li a.activo h4 {
+    font-weight: bold;
+}
+
+#quienes-somos-desktop #contenedor-lista-quienes-somos ul li a:hover h4 {
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+#quienes-somos-desktop .cuadro-gris-texto {
+    height: 130%;
+    position: relative;
+    top: 30%;
+    z-index: 3;
+}
+
+#quienes-somos-desktop .cuadro-gris-texto #cuadro-gris-texto-row {
+    position: relative;
+    overflow: hidden;
+}
+
+#quienes-somos-desktop #cuadro-gris-texto-row .quienes-somos-desktop-text-container {
+    overflow: auto;
+    z-index: 4;
+}
+
+#quienes-somos-desktop #cuadro-gris-texto-row .qsdt-visible {
+    display: block;
+}
+
+#quienes-somos-desktop #cuadro-gris-texto-row .qsdt-oculto {
+    display: none;
+}
+
+#quienes-somos-desktop .quienes-somos-desktop-text-container .linea-blanca-quienes-somos-text {
+    background-color: #ffffff;
+    height: 5px;
+}
+
+#quienes-somos-desktop .quienes-somos-desktop-text-container h4 {
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+#quienes-somos-desktop .quienes-somos-desktop-text-container p {
+    color: #ffffff;
+}
+
+#quienes-somos-desktop #fila-svg-quienes-somos-desktop {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+#quienes-somos-desktop #fila-svg-quienes-somos-desktop img {
+    height: 120%;
+    margin-left: 30%;
+}
+
+/***
+==================================
+    SECTION PORTAFOLIO
+==================================
+***/
+
+#section-portafolio {
+    background-image: url("../img/bg-homeportafolio.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+a#button-oracle,
+a#button-hp,
+a#button-kas,
+a#button-red-hat {
+    -webkit-transition: ease-in-out all 0.3s;
+    transition: ease-in-out all 0.3s;
+}
+
+a#button-oracle:hover {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+a#button-hp:hover {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+a#button-kas:hover {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+a#button-red-hat:hover {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+/***
+==================================
+    SECTION CLIENTES Y PARTNERS
+==================================
+***/
+
+#section-clientesPartners {
+    background-image: url("../img/bg-clientespartners.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+#section-clientesPartners #clientesPartners-horizontal {
+    -webkit-transition: ease-in-out all 0.3s;
+    transition: ease-in-out all 0.3s;
+}
+
+#section-clientesPartners .solo {
+    position: absolute;
+    -webkit-transition: ease-in-out all 0.3s;
+    transition: ease-in-out all 0.3s;
+}
+
+.button-partners,
+.button-clientes {
+    cursor: pointer;
+}
+
+/* ------ Solo Clientes ------ */
+
+#section-clientesPartners #solo-clientes {
+    left: 100%;
+}
+
+#section-clientesPartners #solo-clientes #contenedor-svg-clientes {
+    position: relative;
+    height: 50vh;
+}
+
+#section-clientesPartners #solo-clientes #contenedor-svg-clientes .ventana-transparente-clientesMobile,
+#section-clientesPartners #solo-clientes #contenedor-svg-clientes .ventana-transparente-clientes {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#section-clientesPartners #solo-clientes #logosClientes-container {
+    background-color: #ffffff;
+    height: 50vh;
+    overflow: auto;
+}
+
+#section-clientesPartners #solo-clientes #logosClientes-container .contenedor-logo img {
+    height: 8rem;
+}
+
+/* ------ Solo Partners ------ */
+
+#section-clientesPartners #solo-partners {
+    right: 100%;
+}
+
+#section-clientesPartners #solo-partners #contenedor-svg-partners {
+    position: relative;
+    height: 50vh;
+}
+
+#section-clientesPartners #solo-partners #contenedor-svg-partners .ventana-transparente-partners {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#section-clientesPartners #solo-partners #logosPartners-container {
+    background-color: #ffffff;
+    height: 50vh;
+}
+
+#section-clientesPartners #solo-partners #logosPartners-container .contenedor-logo img {
+    width: auto;
+    height: 8rem;
+}
+
+/***
+==================================
+    SECTION CONTACTENOS
+==================================
+***/
+
+#section-contactenos {
+    background-image: url("../img/bg-contacto.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+#section-contactenos #columna-form {
+    height: 100%;
+}
+
+#section-contactenos #contenedor-titulo-contacto img {
+    width: 100%;
+    height: 50vh;
+}
+
+#section-contactenos form {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#section-contactenos form .grupo-input input,
+#section-contactenos form .grupo-input textarea,
+#section-contactenos form .grupo-input button {
+    width: 100%;
+    outline: none;
+}
+
+#section-contactenos form .grupo-input input {
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #575756;
+}
+
+#section-contactenos form .grupo-input input::-webkit-input-placeholder,
+#section-contactenos form .grupo-input textarea::-webkit-input-placeholder {
+    text-align: left;
+    font-weight: bold;
+}
+
+#section-contactenos form .grupo-input input:-ms-input-placeholder,
+#section-contactenos form .grupo-input textarea:-ms-input-placeholder {
+    text-align: left;
+    font-weight: bold;
+}
+
+#section-contactenos form .grupo-input input::placeholder,
+#section-contactenos form .grupo-input textarea::placeholder {
+    text-align: left;
+    font-weight: bold;
+}
+
+#section-contactenos form .grupo-input textarea {
+    height: 107px;
+    max-height: 180px;
+    margin-bottom: 1.5rem;
+    padding-left: 5px;
+    padding-left: 5px;
+    background-color: transparent;
+    border: 1px solid #575756;
+    border-bottom: 2px solid #575756;
+}
+
+#section-contactenos form .grupo-input button {
+    height: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #575756;
+    border: 1px solid #575756;
+    cursor: pointer;
+    -webkit-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+#section-contactenos form .grupo-input button:hover {
+    color: #575756;
+    background-color: transparent;
+}
+
+#section-contactenos form .contenedor-politicas {
+    width: 100%;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+}
+
+#section-contactenos form .contenedor-politicas a {
+    color: #575757;
+    text-align: center;
+    display: block;
+}

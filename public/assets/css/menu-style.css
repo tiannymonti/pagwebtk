@@ -1,0 +1,188 @@
+.fondo-gris {
+    background-color: rgba(175, 175, 175, 0.9);
+}
+
+header {
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+}
+
+header .row {
+    height: 100%;
+}
+
+.contenedor-btn-menu {
+    position: absolute;
+    height: 10%;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    z-index: 1;
+}
+
+#btn-menu:hover {
+    cursor: pointer;
+}
+
+#btn-menu::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #575756;
+    transform: skewY(-5deg);
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.contenedor-opciones {
+    display: none;
+    transition: ease-in-out all 0.5s;
+}
+
+.fila-contenedor-btn-menu::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #575756;
+    transform: skewY(-5deg);
+    position: absolute;
+    top: -60%;
+    left: 0px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.contenedor-btn-menu .fila-contenedor-icoTextoMenu {
+    color: #FFF;
+}
+
+.contenedor-cajas {
+    padding-top: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.primera-caja,
+.segunda-caja {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: ease-in-out all 0.5s;
+}
+
+.primera-caja {
+    left: 0%;
+}
+
+.segunda-caja {
+    right: -100%;
+}
+
+.mide-80 {
+    height: 80%;
+}
+
+.primera-caja #contenedor-tituloHome h2 {
+    color: #FFD126;
+    font-weight: 600;
+}
+
+.segunda-caja .btnMenu-volver a {
+    text-decoration: none;
+}
+
+.segunda-caja .btnMenu-volver span {
+    color: #FFD126;
+    margin-right: 10px;
+}
+
+.segunda-caja .btnMenu-volver span i {
+    font-size: 1.2em;
+}
+
+.segunda-caja .btnMenu-volver h3 {
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.segunda-caja #contenedor-tituloHomeProducto h2 {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.segunda-caja #contenedor-tituloHomeProducto span h2 {
+    color: #FFD126;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.icono-tak-blanco img {
+    height: 2rem;
+}
+
+.contenedor-boton-opcion {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid #575756;
+}
+
+.contenedor-boton-opcion a {
+    text-decoration: none;
+}
+
+.contenedor-boton-opcion a::hover h3 {
+    font-weight: 600;
+}
+
+.contenedor-boton-opcion a h3 {
+    color: #FFF;
+    font-family: "Helvetica Neue LT Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    transition: ease-in-out all 0.3s;
+    position: relative;
+}
+
+.contenedor-boton-opcion a h3 span {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 3px;
+    bottom: 5px;
+}
+
+.contenedor-boton-opcion a h3 span i {
+    background-color: #FFF;
+    width: 5px;
+    height: 5px;
+    position: relative;
+}
+
+.contenedor-boton-opcion a h3 span i.puntico {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    z-index: 1;
+}
+
+.contenedor-boton-opcion a h3 span i#punto-2 {
+    left: 15px;
+}
+
+.contenedor-boton-opcion a h3 span i#punto-3 {
+    left: 25px;
+}

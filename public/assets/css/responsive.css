@@ -1,0 +1,228 @@
+/***
+=============================================
+	Small devices (landscape phones, 576px and up)
+=============================================
+***/
+
+@media (max-width: 576px) {
+    .titulo-modificado {
+        width: 40% !important;
+        height: 40vh !important;
+    }
+}
+
+@media (min-width: 576px) {
+    main #cabecera-solucionesti {
+        background-image: url("../img/solucionesTI-900px.jpg");
+    }
+}
+
+/***
+=============================================
+	Medium devices (tablets, 768px and up)
+=============================================
+****/
+
+@media (min-width: 768px) {}
+
+/***
+=============================================
+	Large devices (desktops, 992px and up)
+=============================================
+***/
+
+@media (min-width: 992px) {
+    /***
+    =====================================
+        ESTILO DEL INDEX
+    =====================================
+    ***/
+    /* ------ LOADING SPLASH ------ */
+    .splash-loading {
+        background-image: url("../img/splash-desk.gif");
+    }
+    /* ------ Section Uno ------- */
+    #section-conocimiento #fila-svg-conocimiento img {
+        width: auto;
+        height: 70%;
+    }
+    /* ------ Formulario Contacto ------ */
+    #section-contactenos form .contenedor-politicas {
+        position: absolute;
+    }
+
+    main #cabecera-solucionesti {
+        background-image: url("../img/solucionesTI-1200px.jpg");
+    }
+}
+
+/***
+=============================================
+	Extra large devices (large desktops, 1200px and up)
+=============================================
+***/
+
+@media (min-width: 1200px) {
+    /* ------ ESTILO DEL MODAL DE POLÍTICAS ------ */
+    .contenedor-articulo {
+        width: 80%;
+        height: 80%;
+        background-color: #ffffff;
+        padding: 10px 10px;
+    }
+    /***
+    ===============================
+        ESTILO INDEX
+    ===============================
+    ***/
+    /* ------ SECTION CONOCIMIENTO ------ */
+    #section-conocimiento .cuadro-amarillo {
+        margin-left: 41.6% !important;
+    }
+    /* ------ SECTION CLIENTES Y PARTNERS ------ */
+    #section-clientesPartners #solo-clientes #logosClientes-container .contenedor-logo img {
+        width: auto;
+        height: 8rem;
+    }
+    #section-clientesPartners #solo-clientes #contenedor-svg-clientes {
+        position: relative;
+        height: 100vh;
+        overflow: unset;
+    }
+    #section-clientesPartners #solo-clientes #logosClientes-container {
+        background-color: #ffffff;
+        height: 100vh;
+        overflow: auto;
+    }
+    #section-clientesPartners #solo-partners #contenedor-svg-partners {
+        position: relative;
+        height: 100vh;
+    }
+    #section-clientesPartners #solo-partners #logosPartners-container {
+        background-color: #ffffff;
+        height: 100vh;
+    }
+    /* ------ SECTION CONTACTANOS ------ */
+    #section-contactenos .cuadro-amarillo {
+        height: 50%;
+    }
+    .modal-respuesta .container-respuesta {
+        width: 50%;
+    }
+    /***
+    =====================================
+        ESTILO INDEX PRODUCTOS
+    =====================================
+    ***/
+    main #cabecera-solucionesti {
+        background-image: url("../img/solucionesTI-1920px.jpg");
+    }
+
+    .full-height-fixed {
+        height: 100%;
+    }
+    section.contenedor-info {
+        position: absolute;
+        /* top: 100vh; */
+        top: 60vh;
+        left: 0px;
+    }
+    section.contenedor-info .triangulo-derecha {
+        display: block;
+        border-bottom: 43vh solid #ffffff;
+        border-right: 25vw solid transparent;
+    }
+    section.contenedor-info .triangulo-izquierda {
+        display: block;
+        border-bottom: 38vh solid #ffffff;
+        border-left: 25vw solid transparent;
+    }
+    #caja-info-oracle .contenedor-logo-oracle {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    /* ------ PRODUCTO Oracle ------ */
+    .con-lista-tarjeta:hover ul.lista-tarjeta-oracle {
+        display: block !important;
+    }
+    /***
+    =====================================
+        ESTILO SUBPRODUCTOS
+    =====================================
+    ***/
+    .texto-ancho-20 {
+        width: 20% !important;
+    }
+    .texto-ancho-17 {
+        width: 17% !important;
+    }
+    .texto-ancho-16 {
+        width: 16% !important;
+    }
+    .text-alto-15 {
+        height: 15rem !important;
+    }
+    .text-alto-8 {
+        height: 8rem !important;
+    }
+    .alto-50 {
+        height: 50% !important;
+    }
+    .alto-40 {
+        height: 40% !important;
+    }
+    .alto-60 {
+        height: 60% !important;
+    }
+    section.contenedor-info-product {
+        height: 90vh;
+        margin-top: 0px;
+    }
+    section.contenedor-info-product .caja-subproducto-info {
+        height: 90%;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .columna-1-nolista .cuadro-top {
+        height: 50%;
+    }
+    .columna-1 .fila-contenedor-btn-volver::before {
+        display: none;
+    }
+    .columna-1 .cuadro-bottom-nolista {
+        height: 50%;
+    }
+    .columna-1 .cuadro-top .contenedor-titulo-subproduct h3 {
+        width: 35%;
+        height: 17rem;
+        margin: 0px;
+        color: #ffffff;
+        text-align: left;
+        -ms-writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .columna-1 .cuadro-bottom ul a span.cuadro-rojo-lista {
+        width: 5px;
+        height: 5px;
+        background-color: rgb(179, 24, 34);
+        position: absolute;
+        right: -10px;
+        top: 45%;
+    }
+    .columna-2 {
+        height: 100%;
+    }
+    section.contenedor-info-product .columna-2 {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/***
+=============================================
+	Super Extra large devices (large desktops, 1920px and up)
+=============================================
+***/
