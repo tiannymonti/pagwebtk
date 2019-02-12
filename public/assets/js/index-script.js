@@ -323,12 +323,12 @@ enviar.addEventListener('click', (e) => {
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhr.onload = function () {
             let resp = JSON.parse(xhr.responseText);            
-            if (xhr.readyState == 4 && xhr.status == "200") {
-                console.table('normal', resp);
+            if (xhr.readyState === 4 && xhr.status ===  200) {
+                //console.table('normal', resp);
                 tituloRta = "¡ENHORABUENA!.";
                 textoRta = "Pronto nos comunicaremos contigo.";
-            } else {
-                console.error('error', resp);
+            } else if(xhr.readyState === 4 && xhr.status === 500) {
+                //console.error('error', resp);
                 tituloRta = "¡UPS...!";
                 textoRta = "Ha surgido un error, estamos trabando en ello.";
             }

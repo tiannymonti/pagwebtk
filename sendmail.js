@@ -1,14 +1,14 @@
 const nodemailer = require('nodemailer');
 
 async function receiving(pars){
-    let txtBody = `Empresa: ${pars.empresa }.\n Nombre: ${pars.nombre}.\n Teléfono: ${pars.celular}.\n Correo: ${pars.email}.\n Comentarios: ${pars.comentarios}.\n`;
+    const txtBody = `Empresa: ${pars.empresa }.\n Nombre: ${pars.nombre}.\n Teléfono: ${pars.celular}.\n Correo: ${pars.email}.\n Comentarios: ${pars.comentarios}.\n`;
     
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-               user: 'tatiana.barrios.montenegro@gmail.com',
-               pass: 'Am950107!11216'
-           }
+               user: '',
+               pass: ''
+        }
     });
 
     const mailOptions = {
@@ -22,7 +22,6 @@ async function receiving(pars){
 
     console.log('info in', txtBody);
     console.log("Message sent: %s", info.messageId);
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 }
 
 module.exports = {receiving};

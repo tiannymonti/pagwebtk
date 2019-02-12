@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
 const msg = require('./sendmail');
+const ls = require('./logsaver');
 
 const port = process.env.PORT || 3100;
 
@@ -31,10 +32,14 @@ app.listen(port, () => {
 app.post('/sendmail', (req, res) => {
     const bd = req.body;
     msg.receiving(bd)
+    .then(v => {
+        ls.writeLogs(bd);
+        res.send({done: 4, status: 200, 'message':"Email sent"});
+    })
     .catch(e => {
-        console.log('ERROR', e);
+        res.status(500).send({done: 4, status: 500, 'message':e});
     });
 
-    res.send({done: 4, status: 200, 'message':"Holi"})
+    
     
 });
