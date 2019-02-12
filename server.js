@@ -29,8 +29,12 @@ app.listen(port, () => {
 });
 
 app.post('/sendmail', (req, res) => {
-    let bd = req.body;
-    console.log('post', bd);
-    let [status,done] = msg.receiving(bd);
-    res.send({done: 4, status: 200, 'message':"Holi"});
+    const bd = req.body;
+    msg.receiving(bd)
+    .catch(e => {
+        console.log('ERROR', e);
+    });
+
+    res.send({done: 4, status: 200, 'message':"Holi"})
+    
 });

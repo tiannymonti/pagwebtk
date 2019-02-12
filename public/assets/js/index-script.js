@@ -344,6 +344,3 @@ enviar.addEventListener('click', (e) => {
         xhr.send(JSON.stringify(textoEnviar));
     }
 });
-
-
-
