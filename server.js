@@ -1,12 +1,14 @@
+require('./config/config');
+
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
-const msg = require('./sendmail');
-const ls = require('./logsaver');
+const msg = require('./src/sendmail');
+const ls = require('./src/logsaver');
 
-const port = process.env.PORT || 3100;
+const port = process.env.PORT;
 
 
 app.use(express.static(__dirname + '/public'));
@@ -37,6 +39,7 @@ app.post('/sendmail', (req, res) => {
         res.send({done: 4, status: 200, 'message':"Email sent"});
     })
     .catch(e => {
+        console.error(e);
         res.status(500).send({done: 4, status: 500, 'message':e});
     });
 
