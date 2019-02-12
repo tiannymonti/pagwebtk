@@ -42,7 +42,5 @@ app.post('/sendmail', (req, res) => {
         console.error(e);
         res.status(500).send({done: 4, status: 500, 'message':e});
     });
-
-    
-    
+  
 });
