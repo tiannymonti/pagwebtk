@@ -37,6 +37,8 @@ const celular = document.querySelector("#celular");
 const email = document.querySelector("#email");
 const comentarios = document.querySelector("#comentarios");
 const enviar = document.querySelector("#enviar");
+const tituloH_modal = document.querySelector(".modal-respuesta #tituloH-modal");
+const parrafo_modal = document.querySelector(".modal-respuesta #parrafo-modal");
 
 function eligeElement(element){
     const eligeElements = [elige_nosotros, elige_hardware, elige_aplicaciones];
@@ -181,7 +183,7 @@ fila_svg_btn_scroll.addEventListener('click', (e) => {
 ================================================
 ***/
 
-btn_politics.addEventListener('clicl', (e) => {
+btn_politics.addEventListener('click', (e) => {
     e.preventDefault();
     modal_politicas.style.display = "flex";
 });
@@ -291,393 +293,57 @@ enviar.addEventListener('click', (e) => {
         }
     }); 
 
+    if (!validarEmail(dataEnviar[3].value)) {
+        dataEnviar[3].focus();
+        let n = new Noty({
+            type: 'error',
+            layout: 'topRight',
+            text: `Ingresa un email valido`,
+            theme: 'semanticui'
+        }).show();
+        n.show();
+        bandera = false;
+    }
+
     if(bandera) {
-        let dataEnviar = {
+        let textoEnviar = {
             empresa: empresa.value,
             nombre: nombre.value,
             celular: celular.value,
             email: email.value,
             comentarios: comentarios.value
         };
+
+        let tituloRta = "";
+        let textoRta = "";
+        let url = '/sendmail';
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', url, true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.onload = function () {
+            let resp = JSON.parse(xhr.responseText);            
+            if (xhr.readyState == 4 && xhr.status == "200") {
+                console.table('normal', resp);
+                tituloRta = "¡ENHORABUENA!.";
+                textoRta = "Pronto nos comunicaremos contigo.";
+            } else {
+                console.error('error', resp);
+                tituloRta = "¡UPS...!";
+                textoRta = "Ha surgido un error, estamos trabando en ello.";
+            }
+
+            modal_respuesta.style.display = 'flex';
+            tituloH_modal.textContent =  tituloRta;
+            parrafo_modal.textContent = textoRta;
+
+            dataEnviar.forEach(de => {
+                de.value = "";
+            });
+        }
+        xhr.send(JSON.stringify(textoEnviar));
     }
 });
 
 
 
-
-
-
-
-
-
-function ready() {
-
-    $(".btn-cierra-modal").click(function (event) {
-        $(".modal-respuesta").css({
-            "display": "none"
-        })
-    });
-
-    $("#fila-svg-btn-scroll").click(function (event) {
-        $("html, body").animate({
-            scrollTop: $("#section-quienes-somos").offset().top
-        }, 800);
-    });
-
-    /***
-    ================================================
-        EVENTOS PARA MODAL DE POLÍTICAS
-    ================================================
-    ***/
-    $("#btn-politics").click(function (event) {
-        event.preventDefault();
-
-        $(".modal-politicas").css({
-            "display": "flex"
-        });
-
-    });
-
-    $(".btn-cierra-m-politicas").click(function (event) {
-        event.preventDefault();
-
-        $(".modal-politicas").css({
-            "display": "none"
-        });
-
-    });
-
-    /***
-    ================================================
-        EVENTOS PARA QUIENES SOMOS ( DESKTOP )
-    ================================================
-    ***/
-
-    $("#quienes-somos-desktop #elige-nosotros").click(function (event) {
-        event.preventDefault();
-
-        if ($("#quienes-somos-desktop #elige-hardware").hasClass("activo")) {
-            $("#quienes-somos-desktop #elige-hardware").removeClass("activo");
-
-            $("#texto-desktop-hardware").removeClass("qsdt-visible");
-            $("#texto-desktop-hardware").addClass("qsdt-oculto");
-
-        } else if ($("#quienes-somos-desktop #elige-aplicaciones").hasClass("activo")) {
-            $("#quienes-somos-desktop #elige-aplicaciones").removeClass("activo");
-
-            $("#texto-desktop-aplicaciones").removeClass("qsdt-visible");
-            $("#texto-desktop-aplicaciones").addClass("qsdt-oculto");
-        }
-
-        $(this).addClass("activo");
-        $("#texto-desktop-nosotros").removeClass("qsdt-oculto");
-        $("#texto-desktop-nosotros").addClass("qsdt-visible");
-
-    });
-
-    $("#quienes-somos-desktop #elige-hardware").click(function (event) {
-        event.preventDefault();
-
-        if ($("#quienes-somos-desktop #elige-nosotros").hasClass("activo")) {
-            $("#quienes-somos-desktop #elige-nosotros").removeClass("activo");
-
-            $("#texto-desktop-nosotros").removeClass("qsdt-visible");
-            $("#texto-desktop-nosotros").addClass("qsdt-oculto");
-
-        } else if ($("#quienes-somos-desktop #elige-aplicaciones").hasClass("activo")) {
-            $("#quienes-somos-desktop #elige-aplicaciones").removeClass("activo");
-
-            $("#texto-desktop-aplicaciones").removeClass("qsdt-visible");
-            $("#texto-desktop-aplicaciones").addClass("qsdt-oculto");
-        }
-
-        $(this).addClass("activo");
-        $("#texto-desktop-hardware").removeClass("qsdt-oculto");
-        $("#texto-desktop-hardware").addClass("qsdt-visible");
-    });
-
-    $("#quienes-somos-desktop #elige-aplicaciones").click(function (event) {
-        event.preventDefault();
-
-        if ($("#quienes-somos-desktop #elige-hardware").hasClass("activo")) {
-            $("#quienes-somos-desktop #elige-hardware").removeClass("activo");
-
-            $("#texto-desktop-hardware").removeClass("qsdt-visible");
-            $("#texto-desktop-hardware").addClass("qsdt-oculto");
-
-        } else if ($("#quienes-somos-desktop #elige-nosotros").hasClass("activo")) {
-            $("#quienes-somos-desktop #elige-nosotros").removeClass("activo");
-
-            $("#texto-desktop-nosotros").removeClass("qsdt-visible");
-            $("#texto-desktop-nosotros").addClass("qsdt-oculto");
-        }
-
-        $(this).addClass("activo");
-        $("#texto-desktop-aplicaciones").removeClass("qsdt-oculto");
-        $("#texto-desktop-aplicaciones").addClass("qsdt-visible");
-    });
-
-    /***
-    ================================================
-        EVENTOS PARA CLIENTES Y PARTNERS
-    ================================================
-    ***/
-    $("#btn-mobile-expandPartners").click(function (event) {
-        event.preventDefault();
-
-        $("#clientesPartners-vertical").css({
-            "opacity": "0"
-        });
-
-        $("#solo-partners").css({
-            "right": "0%"
-        });
-    });
-
-    $("#btn-expandPartners").click(function (event) {
-        event.preventDefault();
-
-        $("#clientesPartners-horizontal").css({
-            "opacity": "0"
-        });
-
-        $("#solo-partners").css({
-            "right": "0%"
-        });
-    });
-
-    $("#contenedor-svg-partners .ventana-transparente-partners").click(function (event) {
-        event.preventDefault();
-
-        $("#solo-partners").css({
-            "right": "100%"
-        });
-
-        $("#clientesPartners-vertical").css({
-            "opacity": "1"
-        });
-    });
-
-    $("#contenedor-svg-partners .ventana-transparente-partners").click(function (event) {
-        event.preventDefault();
-
-        $("#solo-partners").css({
-            "right": "100%"
-        });
-
-        $("#clientesPartners-horizontal").css({
-            "opacity": "1"
-        });
-    });
-
-    $("#btn-mobile-expandClientes").click(function (event) {
-        event.preventDefault();
-
-        $("#clientesPartners-vertical").css({
-            "opacity": "0"
-        });
-
-        $("#solo-clientes").css({
-            "left": "0%"
-        });
-    });
-
-    $("#contenedor-svg-clientes .ventana-transparente-clientesMobile").click(function (event) {
-        event.preventDefault();
-
-        $("#solo-clientes").css({
-            "left": "100%"
-        });
-
-        $("#clientesPartners-vertical").css({
-            "opacity": "1"
-        });
-    });
-
-    $("#contenedor-svg-clientes .ventana-transparente-clientes").click(function (event) {
-        event.preventDefault();
-
-        $("#solo-clientes").css({
-            "left": "100%"
-        });
-
-        $("#clientesPartners-horizontal").css({
-            "opacity": "1"
-        });
-    });
-
-    $("#btn-expandClientes").click(function (event) {
-        event.preventDefault();
-
-        $("#clientesPartners-horizontal").css({
-            "opacity": "0"
-        });
-
-        $("#solo-clientes").css({
-            "left": "0%"
-        });
-    });
-
-    $("#contenedor-svg-clientes .ventana-transparente-clientes").click(function (event) {
-        event.preventDefault();
-
-        $("#solo-clientes").css({
-            "left": "100%"
-        });
-
-        $("#clientesPartners-horizontal").css({
-            "opacity": "1"
-        });
-    });
-
-    /*** 
-    =========================================
-        SCRIPT PARA LA PARTE DEL "FORMULARIO"
-    =========================================
-    ***/
-
-    // Validación de campos
-    $("#empresa, #nombre").keypress(function (event) {
-        return soloLetras(event);
-    });
-
-    $("#celular").keypress(function (event) {
-        return soloNumeros(event);
-    });
-
-    $("#email").keypress(function (event) {
-        return soloEmail(event);
-    });
-
-    $("#comentarios").keypress(function (event) {
-        // Valida que no se pase el total de caracteres
-        var unoMas = validaMaximo($(this), 500);
-        if (unoMas) {
-            return soloLetrasNumeros(event);
-        } else {
-            return true;
-        }
-    });
-
-    // Envio de formulario
-    $("#enviar").click(function (event) {
-
-        event.preventDefault();
-
-        var empresa = $("#empresa").val();
-        var nombre = $("#nombre").val();
-        var celular = $("#celular").val();
-        var email = $("#email").val();
-        var comentarios = $("#comentarios").val();
-
-        if (empresa == "") {
-            $("#empresa").focus();
-            notificacion("#empresa", "Campo Obligatorio", "top center", "error");
-        } else if (nombre == "") {
-            $("#nombre").focus();
-            notificacion("#nombre", "Campo Obligatorio", "top center", "error");
-        } else if (celular == "") {
-            $("#celular").focus();
-            notificacion("#celular", "Campo Obligatorio", "top center", "error");
-        } else if (email == "") {
-            $("#email").focus();
-            notificacion("#email", "Campo Obligatorio", "top center", "error");
-        } else if (!validarEmail(email)) {
-            $("#email").focus();
-            notificacion("#email", "Ingresa un email valido", "top center", "error");
-        } else if (comentarios == "") {
-            $("#comentarios").focus();
-            notificacion("#comentarios", "Campo Obligatorio", "top center", "error");
-        } else {
-            var dataEnviar = {
-                empresa,
-                nombre,
-                celular,
-                email,
-                comentarios
-            }
-
-            tituloRta = "";
-            textoRta = "";
-
-            $.ajax({
-                    url: '../../../controller/contacto.php',
-                    data: dataEnviar,
-                    type: 'POST',
-                    dataType: 'JSON',
-                    cache: false
-                })
-                .done(function (data) {
-                    var tResponse = data["typeResponse"];
-
-                    if (tResponse == "error") {
-                        var cResponse = data["codeResponse"];
-
-                        switch (cResponse) {
-                            case 'e-0':
-                                $("#empresa").focus();
-                                notificacion("#empresa", "Campo Obligatorio", "top center", "error");
-                                break;
-
-                            case 'e-1':
-                                $("#nombre").focus();
-                                notificacion("#nombre", "Campo Obligatorio", "top center", "error");
-                                break;
-
-                            case 'e-2':
-                                $("#celular").focus();
-                                notificacion("#celular", "Campo Obligatorio", "top center", "error");
-                                break;
-
-                            case 'e-3':
-                                $("#email").focus();
-                                notificacion("#email", "Campo Obligatorio", "top center", "error");
-                                break;
-
-                            case 'e-4':
-                                $("#comentarios").focus();
-                                notificacion("#comentarios", "Campo Obligatorio", "top center", "error");
-                                break;
-
-                            case 'e-5':
-                                console.log("e-5");
-                                break;
-
-                            case 'e-6':
-                                console.log("e-6");
-                                break;
-
-                            default:
-                                break;
-                        }
-
-                        tituloRta = "¡UPS...!";
-                        textoRta = "A surgido un error, estamos trabando en ello.";
-
-                    } else {
-                        tituloRta = "¡ENHORABUENA!.";
-                        textoRta = "Pronto nos comunicaremos contigo.";
-                    }
-                })
-                .always(function () {
-
-                    $(".modal-respuesta").css({
-                        "display": "flex"
-                    });
-                    $(".modal-respuesta #tituloH-modal").text(tituloRta);
-                    $(".modal-respuesta #parrafo-modal").text(textoRta);
-
-                    // Reseteo de los campos
-                    $("#empresa").val("");
-                    $("#nombre").val("");
-                    $("#celular").val("");
-                    $("#email").val("");
-                    $("#comentarios").val("");
-                });
-
-        }
-
-    });
-
-    
-}

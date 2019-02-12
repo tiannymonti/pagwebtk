@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
-
 const hbs = require('hbs');
+const bodyParser = require('body-parser');
+
+const msg = require('./sendmail');
 
 const port = process.env.PORT || 3100;
 
 
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json())
 
 // Express HBS engine
 hbs.registerPartials(__dirname + '/views/parciales');
@@ -25,3 +28,9 @@ app.listen(port, () => {
     console.log(`Escuchando peticiones en el puerto ${ port }`);
 });
 
+app.post('/sendmail', (req, res) => {
+    let bd = req.body;
+    console.log('post', bd);
+    let [status,done] = msg.receiving(bd);
+    res.send({done: 4, status: 200, 'message':"Holi"});
+});
