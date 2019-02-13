@@ -20,11 +20,15 @@ app.set('view engine', 'hbs');
 
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {
+        entorno: process.env.NODE_ENV === 'dev' ? true : false
+    });
 });
 
 app.get('/productos', (req, res) => {
-    res.render('productos');
+    res.render('productos', {
+        entorno: false
+    });
 });
 
 app.listen(port, () => {

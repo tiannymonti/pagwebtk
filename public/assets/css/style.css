@@ -2,32 +2,32 @@
 
 @font-face {
     font-family: 'Helvetica Neue LT Pro';
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Bd.eot");
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueLTPro-Bd.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueLTPro-Bd.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeueLTPro-Bd.svg#HelveticaNeueLTPro-Bd") format("svg");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Bd.eot");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Bd.eot?#iefix") format("embedded-opentype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Bd.woff") format("woff"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Bd.ttf") format("truetype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Bd.svg#HelveticaNeueLTPro-Bd") format("svg");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: '../fonts/helvetica/Helvetica Neue LT Pro';
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Th.eot");
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Th.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueLTPro-Th.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueLTPro-Th.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeueLTPro-Th.svg#HelveticaNeueLTPro-Th") format("svg");
+    font-family: '../../static/fonts/helvetica/Helvetica Neue LT Pro';
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Th.eot");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Th.eot?#iefix") format("embedded-opentype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Th.woff") format("woff"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Th.ttf") format("truetype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Th.svg#HelveticaNeueLTPro-Th") format("svg");
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica Neue LT Pro';
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Lt.eot");
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Lt.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueLTPro-Lt.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeueLTPro-Lt.svg#HelveticaNeueLTPro-Lt") format("svg");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Lt.eot");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Lt.eot?#iefix") format("embedded-opentype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Lt.woff") format("woff"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Lt.svg#HelveticaNeueLTPro-Lt") format("svg");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica Neue LT Pro';
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Md.eot");
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueLTPro-Md.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueLTPro-Md.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeueLTPro-Md.svg#HelveticaNeueLTPro-Md") format("svg");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Md.eot");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Md.eot?#iefix") format("embedded-opentype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Md.woff") format("woff"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Md.ttf") format("truetype"), url("../../static/fonts/helvetica/HelveticaNeueLTPro-Md.svg#HelveticaNeueLTPro-Md") format("svg");
     font-weight: 500;
     font-style: normal;
 }
@@ -491,9 +491,9 @@ h6 {
 }
 
 .presentation-container .presentation-content {
-    background: url("../img/bg-single-content-small.svg"), -webkit-linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
-    background: url("../img/bg-single-content-small.svg"), -o-linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
-    background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
+    background: url("../../static/img/bg-single-content-small.svg"), -webkit-linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
+    background: url("../../static/img/bg-single-content-small.svg"), -o-linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
+    background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
     background-size: 100%;
     background-position: top center;
     background-repeat: no-repeat;
@@ -559,7 +559,7 @@ h6 {
 
 .triangle-grid:before {
     content: " ";
-    background: url("../img/top-triangle.svg");
+    background: url("../../static/img/top-triangle.svg");
     background-size: 110%;
     background-repeat: no-repeat;
     position: absolute;
@@ -587,7 +587,7 @@ h6 {
 
 .block-grid-product:before {
     content: " ";
-    background: url("../img/top-triangle.svg");
+    background: url("../../static/img/top-triangle.svg");
     background-size: 110%;
     background-repeat: no-repeat;
     position: absolute;
@@ -1017,7 +1017,7 @@ h6 {
         position: relative;
     }
     .presentation-container .presentation-content {
-        background: url("../img/bg-single-content.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%);
+        background: url("../../static/img/bg-single-content.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%);
         background-repeat: no-repeat;
         background-position: top center;
         top: 100vh;
@@ -1082,7 +1082,7 @@ h6 {
         left: -10%;
     }
     .presentation-container .presentation-content {
-        background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%);
+        background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%);
     }
     .presentation-container .presentation-content .resume-text-product {
         margin-left: 30vw;
@@ -1130,7 +1130,7 @@ h6 {
     width: 100%;
     margin: auto;
     padding-top: 50vh;
-    background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
+    background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
     background-position: 0 30vh;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1323,7 +1323,7 @@ h6 {
 }
 
 .item-rectangle-red:after {
-    content: url("../img/line-top-small-decoration.svg");
+    content: url("../../static/img/line-top-small-decoration.svg");
     top: 0;
     left: 0;
     width: 100%;
@@ -1422,7 +1422,7 @@ h6 {
         display: block;
     }
     .single-grid:before {
-        content: url("../img/lines-top-grid-decoration.svg");
+        content: url("../../static/img/lines-top-grid-decoration.svg");
         position: absolute;
         width: 300px;
         top: -31px;
@@ -1430,7 +1430,7 @@ h6 {
         z-index: 1;
     }
     .single-grid:after {
-        content: url("../img/lines-bottom-grid-decoration.svg");
+        content: url("../../static/img/lines-bottom-grid-decoration.svg");
         position: absolute;
         width: 120px;
         bottom: -40px;
@@ -1450,7 +1450,7 @@ h6 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .single-product-container {
-        background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 20%, white 20%);
+        background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 20%, white 20%);
         background-position: 0 30vh;
         background-repeat: no-repeat;
     }
@@ -1467,7 +1467,7 @@ h6 {
 
 .single-clientes .header-clientes {
     height: 100vh;
-    background: url("../img/bg-clientes.png");
+    background: url("../../static/img/bg-clientes.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -300px;
@@ -1475,7 +1475,7 @@ h6 {
 }
 
 .single-clientes .header-clientes:before {
-    content: url("../img/bottom-triangle.svg");
+    content: url("../../static/img/bottom-triangle.svg");
     position: absolute;
     bottom: -6px;
     right: 0;
@@ -1526,7 +1526,7 @@ h6 {
 
 .single-partners .header-partners {
     height: 100vh;
-    background: url("../img/bg-clientes.png");
+    background: url("../../static/img/bg-clientes.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -300px;
@@ -1534,7 +1534,7 @@ h6 {
 }
 
 .single-partners .header-partners:before {
-    content: url("../img/bottom-triangle.svg");
+    content: url("../../static/img/bottom-triangle.svg");
     position: absolute;
     bottom: -6px;
     right: 0;
@@ -1701,7 +1701,7 @@ h6 {
 }
 
 #fila_conocimiento {
-    background: url(../img/bg-conocimiento.png);
+    background: url(../../static/img/bg-conocimiento.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1745,7 +1745,7 @@ h6 {
 
 .fila_qSomos_vertical,
 .fila_qSomos_horizontal {
-    background: url(../img/bg-somos.png);
+    background: url(../../static/img/bg-somos.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -2012,7 +2012,7 @@ h6 {
 }
 
 #fila_portafolio {
-    background: url(../img/bg-conocimiento.png);
+    background: url(../../static/img/bg-conocimiento.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -2110,7 +2110,7 @@ h6 {
 }
 
 #fila_clientesPartners {
-    background: url(../img/bg-clientes.png);
+    background: url(../../static/img/bg-clientes.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -2168,7 +2168,7 @@ h6 {
 
 .contenedor_btnDespliegueClientesPartners {
     height: 50%;
-    background-image: url("../img/bg-clientes.png");
+    background-image: url("../../static/img/bg-clientes.png");
     background-size: 360%;
     background-repeat: no-repeat;
     background-position-x: 56%;
@@ -2266,7 +2266,7 @@ h6 {
 }
 
 #fila_contactanos {
-    background: url(../img/bg-contacto.png);
+    background: url(../../static/img/bg-contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -2363,7 +2363,7 @@ h6 {
 .button-home-return {
     width: 8vw;
     height: 5vh;
-    background: url("../img/button-home-return.svg");
+    background: url("../../static/img/button-home-return.svg");
     background-repeat: no-repeat;
     position: absolute;
     right: 0%;
@@ -2422,14 +2422,14 @@ h6 {
 }
 
 .bg-oracle {
-    background: url("../img/bg-grid-kaspersky.png");
+    background: url("../../static/img/bg-grid-kaspersky.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 35%;
 }
 
 .bg-kaspersky {
-    background: url("../img/bg-grid-kaspersky.png");
+    background: url("../../static/img/bg-grid-kaspersky.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2593,7 +2593,7 @@ h6 {
         z-index: 2;
     }
     #fila_portafolio {
-        background: url(../img/bg-conocimiento.png);
+        background: url(../../static/img/bg-conocimiento.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 47%;

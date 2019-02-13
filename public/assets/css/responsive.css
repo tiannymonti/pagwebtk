@@ -13,7 +13,7 @@
 
 @media (min-width: 576px) {
     main #cabecera-solucionesti {
-        background-image: url("../img/solucionesTI-900px.jpg");
+        background-image: url("../../static/img/solucionesTI-900px.jpg");
     }
 }
 
@@ -39,7 +39,7 @@
     ***/
     /* ------ LOADING SPLASH ------ */
     .splash-loading {
-        background-image: url("../img/splash-desk.gif");
+        background-image: url("../../static/img/splash-desk.gif");
     }
     /* ------ Section Uno ------- */
     #section-conocimiento #fila-svg-conocimiento img {
@@ -52,7 +52,7 @@
     }
 
     main #cabecera-solucionesti {
-        background-image: url("../img/solucionesTI-1200px.jpg");
+        background-image: url("../../static/img/solucionesTI-1200px.jpg");
     }
 }
 
@@ -115,7 +115,7 @@
     =====================================
     ***/
     main #cabecera-solucionesti {
-        background-image: url("../img/solucionesTI-1920px.jpg");
+        background-image: url("../../static/img/solucionesTI-1920px.jpg");
     }
 
     .full-height-fixed {

@@ -50,20 +50,20 @@ section.contenedor-info-product .caja-subproducto-info {
 }
 
 section.contenedor-info-product #caja-subproducto-info-oracle {
-    background-image: url("../img/bg-oracle.gif");
+    background-image: url("../../static/img/bg-oracle.gif");
     overflow: hidden;
 }
 
 section.contenedor-info-product #caja-subproducto-info-redhat {
-    background-image: url("../img/bg-grid-kaspersky.png");
+    background-image: url("../../static/img/bg-grid-kaspersky.png");
 }
 
 section.contenedor-info-product #caja-subproducto-info-kaspersky {
-    background-image: url("../img/bg-grid-kaspersky.png");
+    background-image: url("../../static/img/bg-grid-kaspersky.png");
 }
 
 section.contenedor-info-product #caja-subproducto-info-hp {
-    background-image: url("../img/bg-hp.gif");
+    background-image: url("../../static/img/bg-hp.gif");
 }
 
 section.contenedor-info-product .columna-2 {

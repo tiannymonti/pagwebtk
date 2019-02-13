@@ -7,12 +7,12 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,900');
 @font-face {
     font-family: "Helvetica Medium 65";
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Md.woff");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Md.woff");
 }
 
 @font-face {
     font-family: "Helvetica Lite";
-    src: url("../fonts/helvetica/HelveticaNeueLTPro-Lt.woff");
+    src: url("../../static/fonts/helvetica/HelveticaNeueLTPro-Lt.woff");
 }
 
 /***
@@ -426,7 +426,7 @@ header {
 .btn-flotante-home {
     width: 150px;
     height: 50px;
-    background-image: url("../img/button-home-return.svg");
+    background-image: url("../../static/img/button-home-return.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;

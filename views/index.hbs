@@ -45,19 +45,28 @@
         </div>
 
         <!-- SCRIPTS -->
-        <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/popper.min.js"></script>
-        <script src="../assets/js/bootstrap.min.js"></script>
-        
-        <script src="../assets/js/owl.carousel.min.js"></script>
-        <script src="../assets/js/wow.min.js"></script>
-        <script src="../assets/js/menu.js"></script>
-        <script src="../assets/js/noty.js"></script>
-        
-        <script src="../assets/js/general-script.js"></script>
 
-        <script src="../assets/js/index-script.js"></script>
-        <script src="../assets/js/carousel.js"></script>
+
+        {{#if entorno}}
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/popper.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+            
+            <script src="../assets/js/owl.carousel.min.js"></script>
+            <script src="../assets/js/wow.min.js"></script>
+            <script src="../assets/js/menu.js"></script>
+            <script src="../assets/js/noty.js"></script>
+            
+            <script src="../assets/js/general-script.js"></script>
+
+            <script src="../assets/js/index-script.js"></script>
+            <script src="../assets/js/carousel.js"></script>
+        {{else}}
+            <script src="../build/js/bundle.js"></script>
+        {{/if}}
+        <script async src="../assets/js/fontawesome-all.min.js"></script>
+        
+
         
     </body>
 

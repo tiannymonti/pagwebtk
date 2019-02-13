@@ -26,21 +26,21 @@
 /*------- Contenido central --------*/
 
 #bg-oracle {
-    background-image: url("../img/bg-oracle.gif");
+    background-image: url("../../static/img/bg-oracle.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #bg-hp {
-    background-image: url("../img/bg-hp.gif");
+    background-image: url("../../static/img/bg-hp.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #bg-kaspersky {
-    background-image: url("../img/bg-kaspersky.gif");
+    background-image: url("../../static/img/bg-kaspersky.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

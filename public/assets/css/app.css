@@ -823,7 +823,7 @@ body {
     background-image: linear-gradient(90deg, #f7c639 0%, #f7c639 20%, rgba(247, 198, 57, 0) 20%, rgba(247, 198, 57, 0) 40%, #f7c639 40%, #f7c639 60%, rgba(247, 198, 57, 0) 60%, rgba(247, 198, 57, 0) 80%, #f7c639 20%); }
 
 .intro {
-  background: url("../img/bg-intro.svg") white;
+  background: url("../../static/img/bg-intro.svg") white;
   background-size: 100%;
   display: none;
   -webkit-align-items: center;
@@ -994,7 +994,7 @@ body {
   z-index: 43; }
 
 .conocimiento {
-  background: url("../img/bg-conocimiento.png");
+  background: url("../../static/img/bg-conocimiento.png");
   background-position: 35%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1094,7 +1094,7 @@ body {
     position: absolute;
     top: 3vh;
     left: 0;
-    background-image: url("../img/bg-somos.png");
+    background-image: url("../../static/img/bg-somos.png");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -1;
@@ -1182,7 +1182,7 @@ body {
         top: 2rem; }
       .somos .content-block--paragraph .arrows-text-content .derecha {
         right: 0;
-        background: url("../img/arrow-right.svg") #f7c639;
+        background: url("../../static/img/arrow-right.svg") #f7c639;
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center;
@@ -1192,7 +1192,7 @@ body {
         z-index: 30; }
       .somos .content-block--paragraph .arrows-text-content .izquierda {
         left: 0;
-        background: url("../img/arrow-left.svg") #f7c639;
+        background: url("../../static/img/arrow-left.svg") #f7c639;
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center; 
@@ -1217,7 +1217,7 @@ body {
     height: 110%;
     position: absolute;
     left: 0;
-    background-image: url("../img/bg-conocimiento.png");
+    background-image: url("../../static/img/bg-conocimiento.png");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -1;
@@ -1298,7 +1298,7 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../img/bg-clientes.png");
+    background-image: url("../../static/img/bg-clientes.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -1335,7 +1335,7 @@ body {
     }
 
 .contacto {
-  background: url("../img/bg-contacto.png");
+  background: url("../../static/img/bg-contacto.png");
   position: relative;
   z-index: 1;
   height: 100vh; }
@@ -1684,7 +1684,7 @@ body {
     margin: 0;
     padding: 0; }
   .presentation-container .presentation-content {
-    background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
+    background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
     background-size: 100%;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1729,7 +1729,7 @@ body {
 
 .triangle-grid:before {
   content: " ";
-  background: url("../img/top-triangle.svg");
+  background: url("../../static/img/top-triangle.svg");
   background-size: 110%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1754,7 +1754,7 @@ body {
   z-index: 100; }
   .block-grid-product:before {
     content: " ";
-    background: url("../img/top-triangle.svg");
+    background: url("../../static/img/top-triangle.svg");
     background-size: 110%;
     background-repeat: no-repeat;
     position: absolute;
@@ -1853,7 +1853,7 @@ body {
   width: 100%; }
 
 .bg-kaspersky {
-  background: url("../img/bg-grid-kaspersky.png");
+  background: url("../../static/img/bg-grid-kaspersky.png");
   background-size: cover; }
 
 .footer-product {
@@ -2098,7 +2098,7 @@ body {
   .block-grid-product h2 {
     position: relative; }
   .presentation-container .presentation-content {
-    background: url("../img/bg-single-content.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%);
+    background: url("../../static/img/bg-single-content.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%);
     background-repeat: no-repeat;
     background-position: top center;
     top: 100vh; }
@@ -2150,7 +2150,7 @@ body {
     width: 130vw;
     left: -10%; }
   .presentation-container .presentation-content {
-    background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%); }
+    background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 30%, white 30%); }
   .presentation-container .presentation-content .resume-text-product {
     margin-left: 30vw;
     width: 50vw; }
@@ -2184,7 +2184,7 @@ body {
   width: 100%;
   margin: auto;
   padding-top: 50vh;
-  background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
+  background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 10%, white 10%);
   background-position: 0 30vh;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2319,7 +2319,7 @@ body {
     display: none; }
 
 .item-rectangle-red:after {
-  content: url("../img/line-top-small-decoration.svg");
+  content: url("../../static/img/line-top-small-decoration.svg");
   top: 0;
   left: 0;
   width: 100%;
@@ -2389,14 +2389,14 @@ body {
   .single-grid .item-rectangle-red .button-prev .prev-large-device {
     display: block; }
   .single-grid:before {
-    content: url("../img/lines-top-grid-decoration.svg");
+    content: url("../../static/img/lines-top-grid-decoration.svg");
     position: absolute;
     width: 300px;
     top: -31px;
     left: -95px;
     z-index: 1; }
   .single-grid:after {
-    content: url("../img/lines-bottom-grid-decoration.svg");
+    content: url("../../static/img/lines-bottom-grid-decoration.svg");
     position: absolute;
     width: 120px;
     bottom: -40px;
@@ -2411,7 +2411,7 @@ body {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .single-product-container {
-    background: url("../img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 20%, white 20%);
+    background: url("../../static/img/bg-single-content-small.svg"), linear-gradient(rgba(255, 255, 255, 0) 20%, white 20%);
     background-position: 0 30vh;
     background-repeat: no-repeat; }
   .single-product-container .single-resume-text-product {
@@ -2423,13 +2423,13 @@ body {
   overflow-x: hidden; }
   .single-clientes .header-clientes {
     height: 100vh;
-    background: url("../img/bg-clientes.png");
+    background: url("../../static/img/bg-clientes.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -300px;
     position: relative; }
     .single-clientes .header-clientes:before {
-      content: url("../img/bottom-triangle.svg");
+      content: url("../../static/img/bottom-triangle.svg");
       position: absolute;
       bottom: -6px;
       right: 0;
@@ -2468,13 +2468,13 @@ body {
   overflow-x: hidden; }
   .single-partners .header-partners {
     height: 100vh;
-    background: url("../img/bg-clientes.png");
+    background: url("../../static/img/bg-clientes.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -300px;
     position: relative; }
     .single-partners .header-partners:before {
-      content: url("../img/bottom-triangle.svg");
+      content: url("../../static/img/bottom-triangle.svg");
       position: absolute;
       bottom: -6px;
       right: 0;

@@ -5,19 +5,19 @@
 ***/
 
 main #cabecera-oracle {
-    background-image: url("../img/oracle_bg.jpg");
+    background-image: url("../../static/img/oracle_bg.jpg");
 }
 
 main #cabecera-kaspersky {
-    background-image: url("../img/redhat-hd.png");
+    background-image: url("../../static/img/redhat-hd.png");
 }
 
 main #cabecera-hp {
-    background-image: url("../img/hp-hd.png");
+    background-image: url("../../static/img/hp-hd.png");
 }
 
 main #cabecera-redhat {
-    background-image: url("../img/redhat-hd.png");
+    background-image: url("../../static/img/redhat-hd.png");
 }
 
 main .cabecera-producto {
@@ -212,7 +212,7 @@ br.space{
 ***/
 
 #caja-info-sti {
-    background-image: url("../img/fondos-productos-1920px.jpg");
+    background-image: url("../../static/img/fondos-productos-1920px.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -296,7 +296,7 @@ br.space{
 ***/
 
 #caja-info-oracle {
-    background-image: url("../img/bg-oracle.gif");
+    background-image: url("../../static/img/bg-oracle.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -452,7 +452,7 @@ br.space{
 ***/
 
 #caja-info-kas {
-    background-image: url("../img/bg-kaspersky.gif");
+    background-image: url("../../static/img/bg-kaspersky.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -535,7 +535,7 @@ br.space{
 ***/
 
 #caja-info-hp {
-    background-image: url("../img/bg-hp.gif");
+    background-image: url("../../static/img/bg-hp.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -614,7 +614,7 @@ br.space{
 ***/
 
 #caja-info-redhat {
-    background-image: url("../img/bg-redhat.gif");
+    background-image: url("../../static/img/bg-redhat.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

@@ -38,7 +38,7 @@ section {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-image: url("../img/splash-mobile.gif");
+    background-image: url("../../static/img/splash-mobile.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -105,7 +105,7 @@ section {
 ***/
 
 #section-conocimiento {
-    background-image: url("../img/bg-homeportafolio.gif");
+    background-image: url("../../static/img/bg-homeportafolio.gif");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ section {
 ***/
 
 #section-quienes-somos {
-    background-image: url("../img/bg-somos.gif");
+    background-image: url("../../static/img/bg-somos.gif");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -346,7 +346,7 @@ section {
 ***/
 
 #section-portafolio {
-    background-image: url("../img/bg-homeportafolio.gif");
+    background-image: url("../../static/img/bg-homeportafolio.gif");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ a#button-red-hat:hover {
 ***/
 
 #section-clientesPartners {
-    background-image: url("../img/bg-clientespartners.gif");
+    background-image: url("../../static/img/bg-clientespartners.gif");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -486,7 +486,7 @@ a#button-red-hat:hover {
 ***/
 
 #section-contactenos {
-    background-image: url("../img/bg-contacto.png");
+    background-image: url("../../static/img/bg-contacto.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

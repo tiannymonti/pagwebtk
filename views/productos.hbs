@@ -12,7 +12,7 @@
                         <div class="d-none d-md-block btn-flotante-home wow fadeInRight"></div>
                         
                         <section class="col-12 cabecera-producto" id="cabecera-solucionesti">
-                            <img src="../src/public/images/solucionesTI-1920-px.svg" alt="Soluciones TI"> 
+                            <img src="../static/img/solucionesTI-1920-px.svg" alt="Soluciones TI"> 
                         </section>
 
                         <section class="col-12 contenedor-info wow fadeInUp">
@@ -27,13 +27,18 @@
         </div>
 
         <!-- SCRIPTS -->
-        <script src="../src/app/jquery.min.js"></script>
-        <script src="../src/app/popper.min.js"></script>
-        <script src="../src/app/bootstrap.min.js"></script>
-        <script src="../src/app/wow.min.js"></script>
-        <script src="../src/app/menu.js"></script>
-        <script src="../src/app/general-script.js"></script>
-        <script src="../src/app/rotate.js"></script>
+
+        {{#if entorno}}
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/popper.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+            <script src="../assets/js/wow.min.js"></script>
+            <script src="../assets/js/menu.js"></script>
+            <script src="../assets/js/general-script.js"></script>
+        {{else}}
+            <script src="../build/js/bundle_p.js"></script>
+        {{/if}}
+        <script async src="../assets/js/fontawesome-all.min.js"></script>
     </body>
 
 </html>
